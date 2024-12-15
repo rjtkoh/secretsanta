@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Kris Kringle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Drawing Kris Kringle</h1>
+
+    <!-- Add a Prompt -->
+    <section id="add-prompt">
+        <h2>Add a Prompt</h2>
+        <form id="addPromptForm">
+            <input type="text" id="promptInput" placeholder="Enter a drawing prompt" required>
+            <button type="submit">Add Prompt</button>
+        </form>
+        <p id="addPromptMessage"></p>
+    </section>
+
+    <!-- Get a Random Prompt -->
+    <section id="get-prompt">
+        <h2>Get a Random Prompt</h2>
+        <button id="getPromptButton">Get Prompt</button>
+        <p id="randomPromptDisplay"></p>
+    </section>
+
+    <!-- Submit Completed Drawing -->
+    <section id="submit-drawing">
+        <h2>Submit Completed Drawing</h2>
+        <form id="submitDrawingForm">
+            <input type="text" id="drawingTitleInput" placeholder="Enter a title (optional)">
+            <input type="file" id="drawingFileInput" accept="image/*" required>
+            <button type="submit">Submit Drawing</button>
+        </form>
+        <p id="submitDrawingMessage"></p>
+    </section>
+
+    <!-- Display Completed Drawings -->
+    <section id="completed-drawings">
+        <h2>Completed Drawings</h2>
+        <button id="getCompletedDrawingsButton">Get All Drawings</button>
+        <div id="completedDrawingsContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
