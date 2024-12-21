@@ -25,6 +25,11 @@ app.post('/kriskringle/prompts', (req, res) => {
     res.status(201).json({ message: "Prompt added!", id });
 });
 
+// Get all prompts (NEW ENDPOINT)
+app.get('/kriskringle/prompts', (req, res) => {
+    res.json(prompts);
+});
+
 // Get a random prompt (and remove it from the list)
 app.get('/kriskringle/prompt', (req, res) => {
     if (prompts.length === 0) {
